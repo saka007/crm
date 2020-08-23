@@ -79,18 +79,15 @@ $ces1=$ces->fetch_array();
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+    <!-- <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
-      <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="cdashboard.php">
        
         <div class="sidebar-brand-text mx-3"><img src="images/logo3.png" width="200px"></div>
       </a>
 
-      <!-- Divider -->
       <hr class="sidebar-divider my-0">
 
-      <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
         <a class="nav-link" href="cdashboard.php">
           <i class="fas fa-fw fa-tachometer-alt"></i>
@@ -106,15 +103,13 @@ $ces1=$ces->fetch_array();
           <i class="fas fa-fw fa-envelope"></i>
           <span>Messenger <span id="mmcount"></span></span></a>
       </li>
-      <!-- Divider -->
+
       <hr class="sidebar-divider">
 
-      <!-- Heading -->
       <div class="sidebar-heading">
         My Data
       </div>
 
-      <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
           <i class="fas fa-fw fa-folder"></i>
@@ -124,13 +119,11 @@ $ces1=$ces->fetch_array();
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Documents Data :</h6>
             <a class="collapse-item" href="docuploadp.php">Docs To be Uploaded(<?php echo isset($c1['SUM'])?$c1['SUM']:$requiredp_docs_client;?>)</a>
-            <!-- <a class="collapse-item" href="cards.html">Uploaded Documents</a> -->
             <a class="collapse-item" href="approveddocsp.php">Reviewed Documents</a>
           </div>
         </div>
       </li>
 
-      <!-- Nav Item - Utilities Collapse Menu -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
           <i class="fas fa-fw fa-folder"></i>
@@ -140,12 +133,10 @@ $ces1=$ces->fetch_array();
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Documents Data:</h6>
             <a class="collapse-item" href="docuploade.php">Docs to be Uploaded(<?php echo isset($ce1['SUM'])?$ce1['SUM']:$requirede_docs_client;?>)</a>
-            <!-- <a class="collapse-item" href="utilities-border.html">Upoaded Documents</a> -->
             <a class="collapse-item" href="approveddocse.php">Reviewed Documents</a>
           </div>
         </div>
       </li>
-      <!-- Nav Item - Utilities Collapse Menu -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities2" aria-expanded="true" aria-controls="collapseUtilities2">
           <i class="fas fa-fw fa-folder"></i>
@@ -155,18 +146,15 @@ $ces1=$ces->fetch_array();
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Documents Data:</h6>
             <a class="collapse-item" href="docuploadpr.php">Docs to be Uploaded</a>
-            <!-- <a class="collapse-item" href="utilities-border.html">Upoaded Documents</a> -->
             <a class="collapse-item" href="approveddocspr.php">Reviewed Documents</a>
           </div>
         </div>
       </li>
-      <!-- Divider -->
       <hr class="sidebar-divider">
       <div class="sidebar-heading">
         Spouse Data
       </div>
 
-      <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
           <i class="fas fa-fw fa-folder"></i>
@@ -176,13 +164,11 @@ $ces1=$ces->fetch_array();
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Documents Data :</h6>
             <a class="collapse-item" href="docuploadp_spouse.php">Docs To be Uploaded(<?php echo isset($cs1['SUM'])?$cs1['SUM']:$requiredp_docs_spouse;?>)</a>
-            <!-- <a class="collapse-item" href="cards.html">Uploaded Documents</a> -->
             <a class="collapse-item" href="approveddocsps_spouse.php">Reviewed Documents</a>
           </div>
         </div>
       </li>
 
-      <!-- Nav Item - Utilities Collapse Menu -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities4" aria-expanded="true" aria-controls="collapseUtilities4">
           <i class="fas fa-fw fa-folder"></i>
@@ -192,7 +178,6 @@ $ces1=$ces->fetch_array();
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Documents Data:</h6>
             <a class="collapse-item" href="docuploade_spouse.php">Docs to be Uploaded(<?php echo isset($ces1['SUM'])?$ces1['SUM']:$requirede_docs_spouse;?>)</a>
-            <!-- <a class="collapse-item" href="utilities-border.html">Upoaded Documents</a> -->
             <a class="collapse-item" href="approveddocse_spouse.php">Reviewed Documents</a>
           </div>
         </div>
@@ -206,18 +191,15 @@ $ces1=$ces->fetch_array();
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Documents Data:</h6>
             <a class="collapse-item" href="docuploadpr_spouse.php">Docs to be Uploaded</a>
-            <!-- <a class="collapse-item" href="utilities-border.html">Upoaded Documents</a> -->
             <a class="collapse-item" href="approveddocspr_spouse.php">Reviewed Documents</a>
           </div>
         </div>
       </li>
-      <!-- Heading -->
-      <!-- <div class="sidebar-heading">
+       <div class="sidebar-heading">
         Talk to us
-      </div> -->
+      </div> 
 
-      <!-- Nav Item - Pages Collapse Menu -->
-      <!-- <li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
           <i class="fas fa-fw fa-folder"></i>
           <span>Coversations</span>
@@ -235,15 +217,134 @@ $ces1=$ces->fetch_array();
             <a class="collapse-item" href="blank.html">Recieved</a>
           </div>
         </div>
-      </li> -->
+      </li> 
 
-      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+
+    </ul> -->
+    <!-- End of Sidebar -->
+
+    
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="cdashboard.php">
+       
+        <div class="sidebar-brand-text mx-3"><img src="images/logo-giant.jpg" width="50%"></div>
+      </a>
+
+      <hr class="sidebar-divider my-0">
+
+      <li class="nav-item active">
+        <a class="nav-link" href="cdashboard.php">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Dashboard</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">
+          <i class="fas fa-fw fa-book-open"></i>
+          <span>Employee Report</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">
+          <i class="fas fa-fw fa-envelope"></i>
+          <span>Lead Category <span id="mmcount"></span></span></a>
+      </li>
+
+      <hr class="sidebar-divider">
+
+      <div class="sidebar-heading">
+        My Data
+      </div>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>Lead Management</span>
+        </a>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Lead Data :</h6>
+            <a class="collapse-item" href="#">Add New Lead</a>
+            <a class="collapse-item" href="#">Manage Leads</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>Meetings Management</span>
+        </a>
+        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Meeting Data:</h6>
+            <a class="collapse-item" href="#">Meeting Categories</a>
+            <a class="collapse-item" href="#">View Meetings</a>
+            <a class="collapse-item" href="#">Meetings Calender</a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities2" aria-expanded="true" aria-controls="collapseUtilities2">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>Sales Management</span>
+        </a>
+        <div id="collapseUtilities2" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Sales Data:</h6>
+            <a class="collapse-item" href="#">Sales Category</a>
+            <a class="collapse-item" href="#">Sales Source</a>
+            <a class="collapse-item" href="#">Sales Report</a>
+          </div>
+        </div>
+      </li>
+      <hr class="sidebar-divider">
+      <div class="sidebar-heading">
+        User Management
+      </div>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>User Management</span>
+        </a>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">User Data :</h6>
+            <a class="collapse-item" href="#">Super Admin</a>
+            <a class="collapse-item" href="#">Admin</a>
+            <a class="collapse-item" href="#">Consultant</a>
+          </div>
+        </div>
+      </li>
+
+       <div class="sidebar-heading">
+        Extra Feature
+      </div> 
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>Extra Feature</span>
+        </a>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Extra Feature :</h6>
+            <a class="collapse-item" href="#">Break Time Management </a>
+            <a class="collapse-item" href="#">Login Hour’s Management</a>
+            <a class="collapse-item" href="#">Leave Request Management </a>
+          </div>
+        </div>
+      </li>
+
       <div class="text-center d-none d-md-inline">
         <button class="rounded-circle border-0" id="sidebarToggle"></button>
       </div>
 
     </ul>
-    <!-- End of Sidebar -->
+
 
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
@@ -287,7 +388,3 @@ $ces1=$ces->fetch_array();
 
         </nav>
         <!-- End of Topbar -->
-
-       
-
-     
