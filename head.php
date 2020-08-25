@@ -55,6 +55,7 @@ $ces1=$ces->fetch_array();
   <!-- Custom styles for this template-->
   <link href="theme/css/sb-admin-2.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/dropzone.css">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
   <script src="theme/package/dist/sweetalert2.all.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.0/dropzone.min.js"></script>
 <style type="text/css">
