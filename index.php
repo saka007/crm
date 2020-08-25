@@ -147,7 +147,7 @@ header('Location: dashboard.php');
             <!-- Nested Row within Card Body -->
             <div class="row">
               <div class="col-lg-12">
-                <div class="toplogo" align="center" style="padding-top: 1rem"><img src="images/logo.png"> </div>
+                <div class="toplogo" align="center" style="padding-top: 1rem"><img src="images/gm.jpg"> </div>
                 <div class="" style="padding: 1rem 3rem 1rem 3rem">
                   <div class="text-center">
                     <h1 class="h4 text-gray-900 mb-4">Welcome!</h1>

@@ -56,12 +56,12 @@
         <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="logoutc.php">Logout</a>
+          <a class="btn btn-primary" href="logout.php">Logout</a>
         </div>
       </div>
     </div>
   </div>
-<div id="mnort" style="display: none" onclick="location.href='cmessenger.php'"><div>You have a new essage!</div></div>
+<!-- <div id="mnort" style="display: none" onclick="location.href='cmessenger.php'"><div>You have a new essage!</div></div> -->
   <!-- Bootstrap core JavaScript-->
   
   <script src="theme/vendor/jquery/jquery.min.js"></script>
@@ -79,63 +79,6 @@
   <!-- Page level custom scripts -->
   <!-- <script src="theme/js/demo/chart-area-demo.js"></script>
   <script src="theme/js/demo/chart-pie-demo.js"></script> -->
-  <?php //include_once('sockets/reciever.php'); ?>
-<script type="text/javascript">
-$(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip({html:true});
-});
-  <?php if(basename(__FILE__) != 'cmessenger.php') {?>
-    var message_count=0;
-$(document).ready(function(){
-  getNewMessageCount(1);
-});
-
-// setInterval(function(){
-//  getNewMessageCount();
-// }, 5000);
-
-function getNewMessageCount() {
-  var data={}
-  data.sender='<?php echo "L".$_SESSION['ID'];?>'
-   $.ajax({
-    type: "POST",
-    url: 'process/new_message_process.php',
-    data: data,
-    async:true,
-    success: function(result){
-      
-      result=JSON.parse(result);
-      ncount=result.mcount;
-      last_message=result.message;
-      if(last_message!=null && ncount!=null){
-        $("#mnort").attr("data-message",last_message);
-        if(ncount>message_count){
-          $("#mmcount").text("("+ncount+")");
-          $("#malert").find(".alert").text("You have "+ncount+" new "+(ncount>1?"messages":"message")+"!!");
-          $("#malert").css("display","");
-        // if(init==0){
-        //   $("#mnort").find("div").text("You have "+ncount+" new "+(ncount>1?"messages":"message")+"!!");
-        //   $("#mnort").css("display","");
-        // }
-
-    }
-    message_count=ncount;
-  }
-  },error: function (x) {
-      console.log(x);
-    }});
-}
- $("#mnort").mouseleave(function () {
-    $("#mnort").css("display","none");
-    $("#mnort").find("label").remove();
- });
-$("#mnort").hover(function () {
-    $("#mnort").append("<label>"+$("#mnort").attr("data-message")+"</label>");
-
- });
-
-<?php } ?>
-</script>
 </body>
 
 </html>

@@ -184,7 +184,7 @@ if (isset($_GET['task'])) {
 </div>
 
 
-<div class="col-sm-12">
+<!-- <div class="col-sm-12">
 	<h5>IELTS Schedule</h5>
 	<br />
 	<Label>NEXT IELTS SESSION IS ON : <?php echo $ie1['timing']; ?> </Label><br />
@@ -192,12 +192,12 @@ if (isset($_GET['task'])) {
 		<label>link for Session</label>: <a href="<?php echo $ie1['link']; ?>" target="_blank"><?php echo $ie1['link']; ?></a>
 	<?php } ?>
 
-</div>
+</div> -->
 
 
 
 
 
-<?php include_once("footer.php");
+<?php include_once("foot.php");
 
 ?>

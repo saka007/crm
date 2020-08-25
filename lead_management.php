@@ -111,7 +111,7 @@ while($emp1=$emp->fetch_array())
 		<option value="Female">Female</option>
 		</select>
 </div>
-<div class="col-sm-4 form-group"><label >Country Interested</label>
+<div class="col-sm-4 form-group"><label >Country</label>
 <select class="form-control" name="country_interest">
 	<option value="">Select</option>
 <?php $cnt=$obj->display('dm_country_proces','status=1 order by name');
@@ -162,7 +162,7 @@ while($emp1=$emp->fetch_array())
 	</select>
 	
 	</div>
-<div class="col-sm-4 form-group"><label >Marketing Source</label>
+<div class="col-sm-4 form-group"><label >Source</label>
 <select class="form-control" name="market_source" required>
 	<option value="">Select</option>
 	<?php $sou=$obj->display('dm_source','status=1 order by name');

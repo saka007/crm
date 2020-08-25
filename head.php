@@ -4,7 +4,7 @@
 //   echo $_POST['message'];die;
 // }
 include_once("include/config.php");
-include_once("include/authenticatec.php");
+include_once("include/authenticate.php");
 // echo $_SESSION['ID'];
 $cl=$obj->display('dm_lead',"id=".$_SESSION['ID']);
 $cl1=$cl->fetch_array();
@@ -232,13 +232,13 @@ $ces1=$ces->fetch_array();
 
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="cdashboard.php">
        
-        <div class="sidebar-brand-text mx-3"><img src="images/logo-giant.jpg" width="50%"></div>
+        <div class="sidebar-brand-text mx-3"><img src="images/gm.jpg" width="50%"></div>
       </a>
 
       <hr class="sidebar-divider my-0">
 
       <li class="nav-item active">
-        <a class="nav-link" href="cdashboard.php">
+        <a class="nav-link" href="dashboard.php">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
@@ -267,7 +267,7 @@ $ces1=$ces->fetch_array();
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Lead Data :</h6>
-            <a class="collapse-item" href="#">Add New Lead</a>
+            <a class="collapse-item" href="lead_management.php">Add New Lead</a>
             <a class="collapse-item" href="#">Manage Leads</a>
           </div>
         </div>
